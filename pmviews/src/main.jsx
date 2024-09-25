@@ -1,8 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Products from './products.jsx'
-import Orders from './orders.jsx'
-import Customers from './customers.jsx'
+import Products from './Products/Index.jsx'
+import Orders from './Orders/Index.jsx'
+import Customers from './Customers/Index.jsx'
 import {
   createBrowserRouter,
   RouterProvider

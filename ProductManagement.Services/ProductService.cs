@@ -16,7 +16,7 @@ namespace ProductManagement.Services
         {
             try
             {
-                return await _DataContext.Products.Skip(pageNumber).Take(pageSize).ToListAsync();
+                return await _DataContext.Products.Skip((pageNumber -1) * pageSize).Take(pageSize).ToListAsync();
             }
             catch (Exception ex)
             {

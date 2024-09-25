@@ -28,7 +28,9 @@ namespace ProductManagement.API.Controllers
         {
             try
             {
-                return Ok(await _Service.Get(pageNumber, pageSize));
+                var lst = await _Service.Get(pageNumber, pageSize);
+                int i = 1;
+                return Ok(lst);
             }
             catch (Exception ex)
             {

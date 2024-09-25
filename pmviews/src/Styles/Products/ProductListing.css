@@ -1,0 +1,30 @@
+.product-card{
+    display: flex;
+    flex-direction: column;
+    width:200px;
+    height:200px;
+    border:1px solid #000;
+}
+
+.product-descCost{
+    font-size: 12px;
+}
+
+.product-name
+{
+    text-align: center;
+    font-weight: 500;
+}
+
+.product-img img{
+    margin-top:10px;
+    width:100px;
+    height:100px;
+}
+
+.product-unitPrice  {
+    font-weight: 700;
+    .only{
+        color:#F00000;
+    }
+}

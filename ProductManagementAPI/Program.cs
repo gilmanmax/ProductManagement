@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using ProductManagement.Services;
 using ProductManagement.DataContext;
+using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +9,17 @@ var configuration = new ConfigurationBuilder()
     .SetBasePath(builder.Environment.ContentRootPath)
     .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
     .Build();
+
+var specificOrigins = "_myAllowSpecificOrigins";
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: specificOrigins,
+                      policy =>
+                      {
+                          policy.WithOrigins("http://localhost:5173");
+                      });
+});
 
 // Add services to the container.
 
@@ -31,8 +43,10 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    
 }
 
+app.UseCors(specificOrigins);
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
