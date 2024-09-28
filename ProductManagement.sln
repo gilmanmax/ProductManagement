@@ -5,8 +5,6 @@ VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagement.API", "ProductManagementAPI\ProductManagement.API.csproj", "{09EA6EFE-1A94-4227-80E3-EB362DC35A7B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagement.View", "ProductManagementView\ProductManagement.View.csproj", "{342E20C6-1064-4DD2-8EBE-C358301462A0}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagement.Core", "ProductManagementCore\ProductManagement.Core.csproj", "{1C3835B5-9F2C-4A95-BCBC-37125D06696A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagement.Data", "ProductManagementDataContext\ProductManagement.Data.csproj", "{48D0A396-856E-47E3-B9DC-3EEFE1D8C3EA}"
@@ -14,6 +12,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagement.Services", "ProductManagement.Services\ProductManagement.Services.csproj", "{8696F2E9-6613-4CC4-A933-059FCFA07AF0}"
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "pmviews", "PMViews\pmviews.esproj", "{31A5CAD3-D686-41D7-B9F3-742757244DB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductManagement.OAuth", "ProductManagement.OAuth\ProductManagement.OAuth.csproj", "{9A9EA06C-B00E-4800-9C24-7BB0E006DB90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +25,6 @@ Global
 		{09EA6EFE-1A94-4227-80E3-EB362DC35A7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09EA6EFE-1A94-4227-80E3-EB362DC35A7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09EA6EFE-1A94-4227-80E3-EB362DC35A7B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{342E20C6-1064-4DD2-8EBE-C358301462A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{342E20C6-1064-4DD2-8EBE-C358301462A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{342E20C6-1064-4DD2-8EBE-C358301462A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{342E20C6-1064-4DD2-8EBE-C358301462A0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1C3835B5-9F2C-4A95-BCBC-37125D06696A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1C3835B5-9F2C-4A95-BCBC-37125D06696A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C3835B5-9F2C-4A95-BCBC-37125D06696A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -47,6 +43,10 @@ Global
 		{31A5CAD3-D686-41D7-B9F3-742757244DB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31A5CAD3-D686-41D7-B9F3-742757244DB3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{31A5CAD3-D686-41D7-B9F3-742757244DB3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{9A9EA06C-B00E-4800-9C24-7BB0E006DB90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A9EA06C-B00E-4800-9C24-7BB0E006DB90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A9EA06C-B00E-4800-9C24-7BB0E006DB90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A9EA06C-B00E-4800-9C24-7BB0E006DB90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

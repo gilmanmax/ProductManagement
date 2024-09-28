@@ -30,5 +30,8 @@ namespace ProductManagement.Core
         public required int Zip { get; set; }
 
         public ICollection<Order> Orders { get; set; }
+
+        public User User { get; set; }
+
     }
 }

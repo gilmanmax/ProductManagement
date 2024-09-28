@@ -1,24 +1,30 @@
-import { useState } from 'react'
 import '../Styles/_Layout.css'
-import {Outlet } from 'react-router-dom'
-
+import {Outlet, Link } from 'react-router-dom'
+import { useState } from 'react';
+import Header from './_Header';
+import Footer from './_Footer';
 function Layout() {
-  const [count, setCount] = useState(0)
-
+const [loggedIn,setLoggedIn] = useState();
   return (
-    <div class="wrapper">
-      <div className='header'></div>
-        <div id="navContainer">
+      <div className='wrapper'>
+      <div className='header'><Header/></div>
+      <div className="navContainer">
             <nav>
-            <ul id="linkList">
-                <li class="link"><a href="/products">Products</a></li>
-                <li class="link"><a href="/customers">Customers</a></li>
-                <li class="link"><a href="/orders">Orders</a></li>
-            </ul>
+              <ul id="linkList">
+                <li>
+                    <Link to="/products">Products</Link>
+                  </li>
+                  <li>
+                    <Link to="/customers">Customers</Link>
+                  </li>
+                  <li>
+                    <Link to="/orders">Orders</Link>
+                  </li>
+              </ul>
             </nav>
         </div>
         <div className="mainSection"><Outlet/></div>
-        <div className='footer'></div>
+        <div className='footer'><Footer/></div>
     </div>
   )
 }

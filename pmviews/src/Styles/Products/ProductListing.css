@@ -4,10 +4,12 @@
     width:200px;
     height:200px;
     border:1px solid #000;
+    margin:5px;
+    text-align: center;
 }
 
-.product-descCost{
-    font-size: 12px;
+.product-desc{
+    font-size: 10px;
 }
 
 .product-name
@@ -22,7 +24,7 @@
     height:100px;
 }
 
-.product-unitPrice  {
+.product-cost  {
     font-weight: 700;
     .only{
         color:#F00000;
